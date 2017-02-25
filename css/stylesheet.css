@@ -1,7 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* GLOBAL SETTINGS
+   ----------------------------- */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -23,26 +21,107 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
+	font-family: 'Londrina Solid', cursive;
+	color: #000;
+	padding-top: 20px;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h1, h2 {
+	font-family: 'Londrina Shadow', cursive;
+}
+
+h1 {
+	font-size: 4em;
+	margin: 10px 0px;
+}
+
+h2 {
+	font-size: 3em;
+	margin: 5px 0px;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+.fa {
+	color: #000;
+	padding: 5px;
+}
+
+
+/* CONTAINER SIZES
+   ----------------------------- */
+
+.container {
+	width: 100%;
+	margin: auto;
+}
+
+@media only screen and (min-width: 768px){
+	.container {
+		width: 750px;
+	}
+}
+
+@media only screen and (min-width: 992px){
+	.container {
+		width: 970px;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	.container {
+		width: 1170px;
+	}
+}
+
+
+/* HEADER
+   ----------------------------- */
+
+header {
+	text-align: center;
+}
+
+header img {
+	border-radius: 100%;
+	border: 1px solid #333;
+}
+
+header ul li {
+	display: inline-block;
 }
