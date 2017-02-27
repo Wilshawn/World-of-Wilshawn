@@ -24,7 +24,8 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section,
+input, textarea, label {
 	display: block;
 }
 
@@ -83,12 +84,50 @@ p {
 
 .fa {
 	color: #000;
-	padding: 5px;
+	padding: 8px 2px 5px;
 }
 
 .section-divider {
 	color: #000;
 	margin: 20px 0;
+}
+
+.spacer {
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* FORM STYLES
+   ----------------------------- */
+
+input {
+	width: 100%;
+	min-height: 30px;
+	border: 1px solid #000;
+	padding: 0 5px;
+	box-sizing: border-box;
+}
+
+textarea {
+	width: 100%;
+	min-height: 150px;
+	border: 1px solid #000;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+input:focus:valid,
+textarea:focus:valid {
+	border: 2px solid green;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
 }
 
 /* CONTAINER SIZES
@@ -159,6 +198,14 @@ header ul li {
 	box-sizing: border-box;
 }
 
+#about-text a {
+	color: #000;
+}
+
+#about-text a:hover {
+	text-decoration: underline;
+}
+
 @media only screen and (min-width: 768px){
 	
 	#about-pic {
@@ -174,4 +221,38 @@ header ul li {
     float: left;
 	}
 	
+}
+
+
+/* CONTACT US SECTION
+   ----------------------------- */
+
+.contact-form {
+    padding: 1px 0px;
+}
+
+#contact-form h1,
+#contact-form p {
+	text-align: center;
+}
+
+#contact-form label {
+	font-size: 1.3em;
+	margin: 1em 0 .5em;
+	box-sizing: border-box;
+}
+
+#contact-form p {
+	font-size: 1.4em;
+}
+
+#contact-form button[class="submit"] {
+	margin: 1.8em 0;
+	width: 100%;
+	background: #000;
+	color: #fff;
+	font: bold 1.1em 'Open Sans', sans-serif;
+	border: 0;
+	padding: 10px 0;
+	box-sizing: border-box;
 }

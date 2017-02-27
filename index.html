@@ -2,6 +2,7 @@
 
 <html lang="en-us">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World of Wilshawn</title>
     <!-- Google Fonts -->
@@ -26,25 +27,19 @@
                 <!-- GitHub -->
                 <li>
                     <a href="#" target="_blank" title="Check Out My Github Repos!" alt="github">
-                        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
                     </a>
                 </li>
                 <!-- Linkedin -->
                 <li>
                     <a href="#" target="_blank" title="Connect with me on Linkedin!" alt="Linkedin">
-                        <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
                     </a>
                 </li>
                 <!-- Email -->
                 <li>
                     <a href="#" target="_blank" title="Contact Me!" alt="Email">
-                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <!-- Resume -->
-                <li>
-                    <a href="#" target="_blank" title="Review My Resume" alt="Resume">
-                        <i class="fa fa-file-text fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
                     </a>
                 </li>
             </ul>
@@ -54,20 +49,50 @@
 <!-- Header END -->
 
 <!-- About Section -->
-<section class="container">
-    <hr class="section-divider">
-    <!-- Bio Pic -->
-    <div id="about-pic">
-        <img src="images/about-pic.jpg"/>
-    </div>
-    <!-- Bio Text -->
-    <div id="about-text">
-        <h2>ABOUT WILSHAWN</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis mattis turpis, non consequat metus tincidunt ut. Suspendisse id turpis justo. Mauris scelerisque elit sapien, a facilisis dolor congue ut. Etiam sagittis non purus et ultricies. In at nunc fermentum, lobortis sem condimentum, dignissim urna. Fusce laoreet, dui ut sollicitudin malesuada, justo lacus tristique justo, eget sodales tellus turpis in neque. Integer dapibus faucibus neque. Vivamus sed iaculis nibh.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis mattis turpis, non consequat metus tincidunt ut. Suspendisse id turpis justo. Mauris scelerisque elit sapien, a facilisis dolor congue ut. Etiam sagittis non purus et ultricies. In at nunc fermentum, lobortis sem condimentum, dignissim urna. Fusce laoreet, dui ut sollicitudin malesuada, justo lacus tristique justo, eget sodales tellus turpis in neque. Integer dapibus faucibus neque. Vivamus sed iaculis nibh.</p>
+<section>
+    <div class="container">
+        <hr class="section-divider">
+        <!-- Bio Pic -->
+        <div id="about-pic">
+            <img src="images/about-pic.jpg"/>
+        </div>
+        <!-- Bio Text -->
+        <div id="about-text">
+            <h2>ABOUT WILSHAWN</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis mattis turpis, non consequat metus tincidunt ut. Suspendisse id turpis justo. Mauris scelerisque elit sapien, a facilisis dolor congue ut. Etiam sagittis non purus et ultricies. In at nunc fermentum, lobortis sem condimentum, dignissim urna. Fusce laoreet, dui ut sollicitudin malesuada, justo lacus tristique justo, eget sodales tellus turpis in neque. Integer dapibus faucibus neque. Vivamus sed iaculis nibh.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis mattis turpis, non consequat metus tincidunt ut. Suspendisse id turpis justo. Mauris scelerisque elit sapien, a facilisis dolor congue ut. Etiam sagittis non purus et ultricies. In at nunc fermentum, lobortis sem condimentum, dignissim urna. Fusce laoreet, dui ut sollicitudin malesuada, justo lacus tristique justo, eget sodales tellus turpis in neque. Integer dapibus faucibus neque. Vivamus sed iaculis nibh.</p>
+            <a href="#">
+                <h3>View My Resume >></h3>
+            </a>
+        </div>
+        <div class="spacer"></div>
     </div>
 </section>
 <!-- About END -->
+
+<!-- Contact Form Section -->
+<section id="contact-form">
+    <div class="container">
+        <hr class="section-divider">
+        <h1>LET'S TALK</h1>
+        <p>Questions about future project collaborations?  Contact me with the form below.</p>
+        <!-- Contact Us Form -->
+        <form class="contact-form" action="" method="post" name="contact_form">
+            <!-- Name -->
+            <label for="name">Name *</label>
+            <input type="text" name="name" placeholder="Place name here..." required/>
+            <!-- Email -->
+            <label for="email">Email *</label>
+            <input type="email" name="email" placeholder="example@example.com" required/>
+            <!-- Text Area -->
+            <label for="comments">How can I help? *</label>
+            <textarea name="comments" placeholder="Write your comments here..." required></textarea>
+            <!-- Submit Button -->
+            <button class="submit" type="submit">SUBMIT</button>
+        </form>
+    </div>
+</section>
+<!-- Contact Form END -->
 
 </body>
 </html>
