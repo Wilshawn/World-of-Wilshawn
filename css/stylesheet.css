@@ -256,3 +256,12 @@ header ul li {
 	padding: 10px 0;
 	box-sizing: border-box;
 }
+
+
+/* FOOTER SECTION
+   ----------------------------- */
+
+footer {
+	text-align: center;
+	font: normal .7em 'Open Sans',sans-serif;
+}
