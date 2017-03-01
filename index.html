@@ -77,7 +77,7 @@
         <h1>LET'S TALK</h1>
         <p>Questions about future project collaborations?  Contact me with the form below.</p>
         <!-- Contact Us Form -->
-        <form class="contact-form" action="" method="post" name="contact_form">
+        <form class="contact-form" action="php/acknowledge.php" method="post" name="contact_form">
             <!-- Name -->
             <label for="name">Name *</label>
             <input type="text" name="name" placeholder="Place name here..." required/>
@@ -88,11 +88,17 @@
             <label for="comments">How can I help? *</label>
             <textarea name="comments" placeholder="Write your comments here..." required></textarea>
             <!-- Submit Button -->
-            <button class="submit" type="submit">SUBMIT</button>
+            <button class="submit" name="submit" type="submit">SUBMIT</button>
         </form>
     </div>
 </section>
 <!-- Contact Form END -->
+
+<!-- Footer Signature -->
+<footer>
+    <p>&copy; <script src="js/copyright.js"></script> Wilshawn Alexander</p>
+</footer>
+<!-- Footer Signature End -->
 
 </body>
 </html>
