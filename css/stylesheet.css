@@ -176,6 +176,37 @@ header ul li {
 }
 
 
+/* GALLERY SECTION
+   ----------------------------- */
+
+#image-gallery {
+	text-align: center;
+	margin: 10px 0;
+}
+
+#image-gallery .container ul {
+	margin: 10px 0;
+}
+
+#image-gallery .container ul li {
+	font-size: 1.4em;
+	display: inline-block;
+	padding: 10px;
+}
+
+#image-gallery .container .img-thumbnail {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+#image-gallery .container .img-thumbnail img {
+	margin: 10px auto;
+	border: 1px solid #969595;
+	box-shadow: 0 0 13px -2px #969595;
+	box-sizing: border-box;
+}
+	
 /* ABOUT SECTION
    ----------------------------- */
 
