@@ -194,17 +194,30 @@ header ul li {
 	padding: 10px;
 }
 
-#image-gallery .container .img-thumbnail {
+#image-gallery .container .img-thumbnail img {
+	border: 1px solid #969595;
 	display: inline-block;
+	box-shadow: 0 0 13px -2px #969595;
+	margin: 5px;
 	box-sizing: border-box;
-	padding: 5px;
 }
 
-#image-gallery .container .img-thumbnail img {
-	margin: 10px auto;
-	border: 1px solid #969595;
-	box-shadow: 0 0 13px -2px #969595;
-	box-sizing: border-box;
+@media only screen and (min-width: 768px){
+	#image-gallery .container .img-thumbnail img {
+		width: 48%;
+	}
+}
+
+@media only screen and (min-width: 992px){
+	#image-gallery .container .img-thumbnail img {
+		width: 32%;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	#image-gallery .container .img-thumbnail img {
+		width: 23%;
+	}
 }
 	
 /* ABOUT SECTION
