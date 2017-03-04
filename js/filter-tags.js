@@ -1,3 +1,5 @@
+/*Script loops through the images and the tagged object is given a new property for each tag.  The value of each property is an array holding the images with that tag. */
+
 (function() {
     
     var $imgs = $('.img-thumbnail img');
@@ -17,7 +19,8 @@
             });
         }
     });
-        
+       /* filter items are created and added by the script.  When a item is clicked, it triggers an function, which will hide and show the appropriate images for that particular tag. */
+       
         $('<li/>', {
             text: 'All',
             class: 'active',
