@@ -52,51 +52,38 @@
 <section id="image-gallery">
     <div class="container">
         <!-- Filter Options -->
-        <ul>
+        <div id="filters">
+            <ul></ul>
+        </div>
+        <!--<ul>
             <li>All</li>
             <li>Websites</li>
             <li>Logos</li>
             <li>Artwork</li>
             <li>Flyers</li>
             <li>Misc.</li>
-        </ul>
+        </ul> -->
         <!-- Filter Options END -->
         
         <!-- Image Gallery -->
         
         <!-- Row 1 -->
         <div class="img-thumbnail">
-            <img src="images/morning-oj.jpg" alt="Morning OJ Layout" />
-        </div>
-        <div class="img-thumbnail">
-            <img src="images/joecity-album.jpg" alt="A Taste of Nostalgia" />
-        </div>
-        <div class="img-thumbnail">
-            <img src="images/teamdean-logo.jpg" alt="team dean crest" />
-        </div>
-        
-        <!-- Row 2 -->
-        <div class="img-thumbnail">
-            <img src="images/bps-album.jpg" alt="Bachelor Party Sessions" />
-        </div>
-        <div class="img-thumbnail">
-            <img src="images/showtime-website.jpg" alt="Showtime Layout" />
-        </div>
-        <div class="img-thumbnail">
-            <img src="images/atu-website.jpg" alt="Above Tha Underground Website" />
-        </div>
-        
-        <!-- Row 3 -->
-        <div class="img-thumbnail">
-            <img src="images/sxv-album.jpg" alt="Sex X Violence Album" />
-        </div>
-        <div class="img-thumbnail">
-            <img src="images/rh-website.jpg" alt="Replacement Hitmen Website" />
-        </div>
-        <div class="img-thumbnail">
-            <img src="images/ir-album.jpg" alt="Imperius Rex Art" />
+            <img src="images/morning-oj.jpg" data-tags="Websites" alt="Morning OJ Layout" />
+            <img src="images/joecity-album.jpg" data-tags="Artwork" alt="A Taste of Nostalgia" />
+            <img src="images/teamdean-logo.jpg" data-tags="Logos"  alt="team dean crest" />
+            <img src="images/bps-album.jpg" data-tags="Artwork" alt="Bachelor Party Sessions" />
+            <img src="images/showtime-website.jpg" data-tags="Websites" alt="Showtime Layout" />
+            <img src="images/atu-website.jpg" data-tags="Websites" alt="Above Tha Underground Website" />
+            <img src="images/sxv-album.jpg" data-tags="Artwork" alt="Sex X Violence Album" />
+            <img src="images/rh-website.jpg" data-tags="Websites" alt="Replacement Hitmen Website" />
+            <img src="images/ir-album.jpg" data-tags="Artwork" alt="Imperius Rex Art" />
+            <img src="images/boatdemo-website.jpg" data-tags="Websites" alt="Boat Demostration Website" />
+            <img src="images/moh-logo.jpg" data-tags="Logos"  alt="MOH Logo" />
+            <img src="images/arcadestick-misc.jpg" data-tags="Misc."  alt="GZA Arcade Stick" />
         </div>
         <!-- Image Gallery END -->
+        <div class="spacer"></div>
     </div>    
 </section>
 <!-- Gallery END -->
@@ -152,6 +139,11 @@
     <p>&copy; <script src="js/copyright.js"></script> Wilshawn Alexander</p>
 </footer>
 <!-- Footer Signature End -->
+
+<!-- JQuery Call In -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Filter Javascript Call In -->
+<script src="js/filter-tags.js"></script>
 
 </body>
 </html>
