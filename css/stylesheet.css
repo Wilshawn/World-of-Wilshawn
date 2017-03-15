@@ -33,7 +33,6 @@ body {
 	line-height: 1;
 	font-family: 'Londrina Solid', cursive;
 	color: #000;
-	padding-top: 20px;
 }
 
 ol, ul {
@@ -158,6 +157,68 @@ textarea:focus {
 	}
 }
 
+
+/* NAVIGATION
+   ----------------------------- */
+nav {
+	text-align: right;
+	display: inline-block;
+	padding: 20px 0;
+	width: 80%;
+	position: relative;
+}
+
+nav #nav-toggle{
+	float: right;
+	cursor: pointer;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after  {
+	cursor: pointer;
+	border-radius: 1px;
+	height: 5px;
+	width: 35px;
+	background: #000;
+	position: absolute;
+	display: block;
+	content: '';
+	transition: all 500ms ease-in-out;
+}
+
+#nav-toggle.active span {
+	background: transparent;
+}
+
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+	top: 0;
+}
+
+#nav-toggle.active span:before {
+	transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+	transform: rotate(-45deg);
+}
+
+#nav-toggle span:before {
+	top: -10px;
+}
+
+#nav-toggle span:after {
+	bottom: -10px;
+}
+
+#nav-items {
+	margin-right: 100px;
+	display: none;
+}
+
+#nav-items li {
+	display: inline-block;
+	padding: 0 10px;
+	font-size: 1.6em;
+}
 
 /* HEADER
    ----------------------------- */
