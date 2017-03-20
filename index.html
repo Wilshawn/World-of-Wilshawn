@@ -18,20 +18,21 @@
 <!-- Navigation -->
 <nav>
     <div class="container">
-        <a id="nav-toggle" href="#">
-            <span></span>
-        </a>
         <ul id="nav-items">
-            <li>WORK</li>
-            <li>ABOUT</li>
-            <li>CONTACT</li>
+            <li><a href="#profile">HOME</a></li>
+            <li>•</li>
+            <li><a href="#image-gallery">WORK</a></li>
+            <li>•</li>
+            <li><a href="#about">ABOUT</a></li>
+            <li>•</li>
+            <li><a href="#contact-form">CONTACT</a></li>
         </ul>
     </div>
 </nav>
 <!-- Navigation END -->
 
 <!-- Header Section -->
-<header>
+<header id="profile">
     <div class="container">
         <img src="images/profile-pic.jpg"/>
         <h1>WILSHAWN ALEXANDER</h1>
@@ -70,14 +71,6 @@
         <div id="filters">
             <ul></ul>
         </div>
-        <!--<ul>
-            <li>All</li>
-            <li>Websites</li>
-            <li>Logos</li>
-            <li>Artwork</li>
-            <li>Flyers</li>
-            <li>Misc.</li>
-        </ul> -->
         <!-- Filter Options END -->
         
         <!-- Image Gallery -->
@@ -104,7 +97,7 @@
 <!-- Gallery END -->
 
 <!-- About Section -->
-<section>
+<section id="about">
     <div class="container">
         <hr class="section-divider">
         <!-- Bio Pic -->
@@ -159,7 +152,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!-- Filter Javascript Call In -->
 <script src="js/filter-tags.js"></script>
-<script src="js/navigation.js"></script>
+<script src="js/anchor-transition.js"></script>
 
 </body>
 </html>

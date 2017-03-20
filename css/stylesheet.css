@@ -161,70 +161,51 @@ textarea:focus {
 /* NAVIGATION
    ----------------------------- */
 nav {
-	text-align: right;
+	text-align: center;
 	display: inline-block;
-	padding: 20px 0;
-	width: 80%;
-	position: relative;
-}
-
-nav #nav-toggle{
-	float: right;
-	cursor: pointer;
-}
-
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after  {
-	cursor: pointer;
-	border-radius: 1px;
-	height: 5px;
-	width: 35px;
+	padding: 5px 0;
+	width: 100%;
+	position: fixed;
 	background: #000;
-	position: absolute;
-	display: block;
-	content: '';
-	transition: all 500ms ease-in-out;
-}
-
-#nav-toggle.active span {
-	background: transparent;
-}
-
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-	top: 0;
-}
-
-#nav-toggle.active span:before {
-	transform: rotate(45deg);
-}
-
-#nav-toggle.active span:after {
-	transform: rotate(-45deg);
-}
-
-#nav-toggle span:before {
-	top: -10px;
-}
-
-#nav-toggle span:after {
-	bottom: -10px;
-}
-
-#nav-items {
-	margin-right: 100px;
-	display: none;
+	color: #fff;
 }
 
 #nav-items li {
 	display: inline-block;
-	padding: 0 10px;
-	font-size: 1.6em;
+	padding: 0 6px;
+	font-size: 1.4em;
 }
+
+#nav-items li a,
+#nav-items li a:visited {
+	color: #fff;
+}
+
+@media only screen and (min-width: 768px){
+	#nav-items li {
+		padding: 0 9px;
+	}
+}
+
+@media only screen and (min-width: 992px){
+	#nav-items li {
+		padding: 0 12px;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	#nav-items li {
+		padding: 0 15px;
+	}
+}
+
 
 /* HEADER
    ----------------------------- */
 
 header {
 	text-align: center;
+	padding-top: 50px;
 }
 
 header img {
@@ -240,6 +221,10 @@ header ul li {
 /* GALLERY SECTION
    ----------------------------- */
 
+section#image-gallery {
+	padding-top: 25px;	
+}
+
 #image-gallery {
 	text-align: center;
 	margin: 10px 0;
@@ -252,7 +237,7 @@ header ul li {
 #image-gallery .container ul li {
 	font-size: 1.4em;
 	display: inline-block;
-	padding: 10px;
+	padding: 8px;
 }
 
 #image-gallery .container .img-thumbnail img {
@@ -264,6 +249,10 @@ header ul li {
 }
 
 @media only screen and (min-width: 768px){
+	#image-gallery .container ul li {
+		padding: 10px;
+	}
+
 	#image-gallery .container .img-thumbnail img {
 		width: 48%;
 	}
@@ -283,6 +272,10 @@ header ul li {
 	
 /* ABOUT SECTION
    ----------------------------- */
+
+section#about {
+	padding-top: 10px;
+}
 
 #about-pic {
 	width: 100%;
@@ -331,6 +324,10 @@ header ul li {
 
 /* CONTACT US SECTION
    ----------------------------- */
+
+section#contact-form {
+	padding-top: 10px;	
+}
 
 .contact-form {
     padding: 1px 0px;
