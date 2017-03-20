@@ -33,7 +33,6 @@ body {
 	line-height: 1;
 	font-family: 'Londrina Solid', cursive;
 	color: #000;
-	padding-top: 20px;
 }
 
 ol, ul {
@@ -159,11 +158,54 @@ textarea:focus {
 }
 
 
+/* NAVIGATION
+   ----------------------------- */
+nav {
+	text-align: center;
+	display: inline-block;
+	padding: 5px 0;
+	width: 100%;
+	position: fixed;
+	background: #000;
+	color: #fff;
+}
+
+#nav-items li {
+	display: inline-block;
+	padding: 0 6px;
+	font-size: 1.4em;
+}
+
+#nav-items li a,
+#nav-items li a:visited {
+	color: #fff;
+}
+
+@media only screen and (min-width: 768px){
+	#nav-items li {
+		padding: 0 9px;
+	}
+}
+
+@media only screen and (min-width: 992px){
+	#nav-items li {
+		padding: 0 12px;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	#nav-items li {
+		padding: 0 15px;
+	}
+}
+
+
 /* HEADER
    ----------------------------- */
 
 header {
 	text-align: center;
+	padding-top: 50px;
 }
 
 header img {
@@ -179,6 +221,10 @@ header ul li {
 /* GALLERY SECTION
    ----------------------------- */
 
+section#image-gallery {
+	padding-top: 25px;	
+}
+
 #image-gallery {
 	text-align: center;
 	margin: 10px 0;
@@ -191,7 +237,7 @@ header ul li {
 #image-gallery .container ul li {
 	font-size: 1.4em;
 	display: inline-block;
-	padding: 10px;
+	padding: 8px;
 }
 
 #image-gallery .container .img-thumbnail img {
@@ -203,6 +249,10 @@ header ul li {
 }
 
 @media only screen and (min-width: 768px){
+	#image-gallery .container ul li {
+		padding: 10px;
+	}
+
 	#image-gallery .container .img-thumbnail img {
 		width: 48%;
 	}
@@ -222,6 +272,10 @@ header ul li {
 	
 /* ABOUT SECTION
    ----------------------------- */
+
+section#about {
+	padding-top: 10px;
+}
 
 #about-pic {
 	width: 100%;
@@ -270,6 +324,10 @@ header ul li {
 
 /* CONTACT US SECTION
    ----------------------------- */
+
+section#contact-form {
+	padding-top: 10px;	
+}
 
 .contact-form {
     padding: 1px 0px;
