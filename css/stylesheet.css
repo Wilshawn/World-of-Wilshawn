@@ -168,6 +168,7 @@ nav {
 	position: fixed;
 	background: #000;
 	color: #fff;
+	z-index: 10;
 }
 
 #nav-items li {
@@ -246,6 +247,13 @@ section#image-gallery {
 	box-shadow: 0 0 13px -2px #969595;
 	margin: 5px;
 	box-sizing: border-box;
+	cursor: pointer;
+	transition: filter .3s ease-in
+}
+
+#image-gallery .container  .img-thumbnail img:hover {
+	-webkit-filter: grayscale(100%);
+	filter:grayscale(100%);
 }
 
 @media only screen and (min-width: 768px){
