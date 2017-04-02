@@ -15,6 +15,7 @@ if(empty($name)||empty($visitor_email)||empty($comments))
     exit;
 }
 
+// Email Notification
 $email_from = "wilshawn.alexander@gmail.com";
 $email_subject = "New Form Submission";
 $email_body = "You have received a new message from $name. \n".
@@ -24,7 +25,21 @@ $email_body = "You have received a new message from $name. \n".
 $to = "wilshawn.alexander@gmail.com";
 $headers = "From: $email_from \r\n";
 
+// Form Verfication
+$user = "$visitor_email";
+$user_subject = "Thank You";
+$user_headers = "From: $email_from \r\n";
+
+$user_message = "Thank you for Contacting Me!  I will get back to you shortly. ";
+
+
 // Send the email
 mail($to,$email_subject,$email_body,$headers);
+
+// Thank email
+mail($user,$user_subject,$user_message,$user_headers);
+
+// Redirect to Thank you Page
+header("Location: http://localhost/World-of-Wilshawn/thank-you.html");
 
 ?>
