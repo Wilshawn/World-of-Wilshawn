@@ -18,19 +18,19 @@ if(empty($name)||empty($visitor_email)||empty($comments))
 // Email Notification
 $email_from = "wilshawn.alexander@gmail.com";
 $email_subject = "New Form Submission";
-$email_body = "You have received a new message from $name. \n".
-    "email address: $visitor_email\n".
-    "Here is the message: \n $comments".
+$email_body = "You have received a new message from $name. \n\n".
+    "Email address: $visitor_email\n\n".
+    "Here is the message: \n\n$comments ";
     
 $to = "wilshawn.alexander@gmail.com";
 $headers = "From: $email_from \r\n";
 
 // Form Verfication
 $user = "$visitor_email";
-$user_subject = "Thank You";
+$user_subject = "Thank You from Wilshawn";
 $user_headers = "From: $email_from \r\n";
 
-$user_message = "Thank you for Contacting Me!  I will get back to you shortly. ";
+$user_message = "Thank you for contacting Me!  I will get back to you shortly.";
 
 
 // Send the email
@@ -40,6 +40,6 @@ mail($to,$email_subject,$email_body,$headers);
 mail($user,$user_subject,$user_message,$user_headers);
 
 // Redirect to Thank you Page
-header("Location: http://localhost/World-of-Wilshawn/thank-you.html");
+header("Location: https://worldofwilshawn.000webhostapp.com/thank-you.html");
 
 ?>
