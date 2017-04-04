@@ -173,13 +173,19 @@ nav {
 
 #nav-items li {
 	display: inline-block;
-	padding: 0 6px;
+	padding: 0 2px;
 	font-size: 1.4em;
 }
 
 #nav-items li a,
 #nav-items li a:visited {
 	color: #fff;
+}
+
+@media only screen and (min-width: 375px){
+	#nav-items li {
+		padding: 0 6px;
+	}
 }
 
 @media only screen and (min-width: 768px){
@@ -245,7 +251,7 @@ section#image-gallery {
 	border: 1px solid #969595;
 	display: inline-block;
 	box-shadow: 0 0 13px -2px #969595;
-	margin: 5px;
+	margin: 5px 0;
 	box-sizing: border-box;
 	cursor: pointer;
 	transition: filter .3s ease-in
@@ -263,6 +269,13 @@ section#image-gallery {
 
 	#image-gallery .container .img-thumbnail img {
 		width: 48%;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	#image-gallery .container .img-thumbnail img {
+		width: 32%;
+		margin: 5px;
 	}
 }
 
