@@ -40,6 +40,6 @@ mail($to,$email_subject,$email_body,$headers);
 mail($user,$user_subject,$user_message,$user_headers);
 
 // Redirect to Thank you Page
-header("Location: https://worldofwilshawn.000webhostapp.com/thank-you.html");
+header("Location: http://www.wilshawnalexander.com/thank-you.html");
 
 ?>
