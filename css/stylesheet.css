@@ -400,3 +400,11 @@ footer {
 	text-align: center;
 	font: normal .7em 'Open Sans',sans-serif;
 }
+
+
+/* FOOTER SECTION
+   ----------------------------- */
+
+img[alt="www.000webhost.com"] {
+	display: none;
+}
