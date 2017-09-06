@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="View Weather...by Wilshawn">
+    <meta name="keywords" content="wilshawn, alexander, weather, portfolio, world of wilshawn">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon-weather.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon-weather.ico" type="image/x-icon">
+    <!-- Website Stylesheet -->
+    <link href="css/weather-stylesheet.css" rel="stylesheet" />
+  <title>Weather by Wilshawn</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Home Button -->
+    <header>
+        <img id="weatherHome" src="images/home.png" >
+    </header>
+    <h1 class="weatherHeader">WEATHER BY WILSHAWN</h1>
+    <div class="weatherImage">
+      <img src="images/featured-image.png" alt="weather image" />
+    </div>
+    <!-- Search Box -->
+    <div class="weatherSearch">
+      <input type="text" id="cityName" placeholder="City, St" >
+      <div class="orSubmit">- or -</div>
+      <input type="text" id="zipCode" placeholder="Zip Code">
+      <button type="submit" id="weatherSubmit">Search</button>
+    </div>
+    <!-- Weather Results -->
+    <div class="weatherResponse"></div>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="js/getWeather.js"></script>
+  </div>
+</body>
+</html>
