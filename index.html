@@ -144,6 +144,8 @@
         <p>Questions about future project collaborations?  Contact me with the form below.</p>
         <!-- Contact Us Form -->
         <form class="contact-form" action="php/form-to-email.php" method="post" name="contact_form">
+            <!-- Hidden Field Honeypot -->
+            <input type="text" name="firstname" class="hide-robot">
             <!-- Name -->
             <label for="name">Name *</label>
             <input type="text" name="name" placeholder="Place name here..." required/>

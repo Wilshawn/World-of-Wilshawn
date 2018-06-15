@@ -8,6 +8,9 @@ $name = $_POST['name'];
 $visitor_email = $_POST['email'];
 $comments = $_POST['comments'];
 
+// Honey pot field
+$honeypot = $_POST['firstname'];
+
 // Validate
 if(empty($name)||empty($visitor_email)||empty($comments))
 {
@@ -33,13 +36,16 @@ $user_headers = "From: $email_from \r\n";
 $user_message = "Thank you for contacting Me!  I will get back to you shortly.";
 
 
-// Send the email
-mail($to,$email_subject,$email_body,$headers);
+if ($honeypot) {
+    return;
+} else {
+    // Send the email
+    mail($to,$email_subject,$email_body,$headers);
+    // Thank email
+    mail($user,$user_subject,$user_message,$user_headers);
+    // Redirect to Thank you Page
+    header("Location: http://www.wilshawnalexander.com/thank-you.html");
+}
 
-// Thank email
-mail($user,$user_subject,$user_message,$user_headers);
-
-// Redirect to Thank you Page
-header("Location: http://www.wilshawnalexander.com/thank-you.html");
 
 ?>
