@@ -19,7 +19,7 @@ if(empty($name)||empty($visitor_email)||empty($comments))
 }
 
 // Email Notification
-$email_from = "wilshawn.alexander@gmail.com";
+$email_from = "wilshawn.alexander@worldofwilshawn.com";
 $email_subject = "New Form Submission";
 $email_body = "You have received a new message from $name. \n\n".
     "Email address: $visitor_email\n\n".
