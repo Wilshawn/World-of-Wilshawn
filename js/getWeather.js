@@ -2,7 +2,7 @@ function getWeatherByCity() {
   /* Resets City Temp */
   $('.weatherResponse').html('');
   var cityName = $('#cityName').val();
-  var apiCall = 'http://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=4a90aee1c5a6a311869b8fa68d87623d';
+  var apiCall = 'https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=4a90aee1c5a6a311869b8fa68d87623d';
   $.getJSON(apiCall, weatherCallback);
   
   /* Sends in Weather */
@@ -21,7 +21,7 @@ function getWeatherByZip() {
   /* Resets City Temp */
   $('.weatherResponse').html('');
   var zipCode = $('#zipCode').val();
-  var apiCall = 'http://api.openweathermap.org/data/2.5/weather?zip=' + zipCode + '&appid=4a90aee1c5a6a311869b8fa68d87623d';
+  var apiCall = 'https://api.openweathermap.org/data/2.5/weather?zip=' + zipCode + '&appid=4a90aee1c5a6a311869b8fa68d87623d';
   $.getJSON(apiCall, weatherCallback);
   
   /* Sends in Weather */
