@@ -18,9 +18,11 @@
     <meta property="og:title" content="Wilshawn Alexander: Developer x Designer" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.wilshawnalexander.com/" />
-    <meta property="og:image" content="http://www.wilshawnalexander.com/og-image.jpg" />
+    <meta property="og:image" content="http://www.wilshawnalexander.com/images/og-image.jpg" />
     <meta property="og:image:width" content="300" />
     <meta property="og:image:height" content="300" />
+    <!-- google recaptcha -->
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 </head>
 
 <body>
@@ -146,8 +148,6 @@
         <p>Questions about future project collaborations?  Contact me with the form below.</p>
         <!-- Contact Us Form -->
         <form class="contact-form" action="php/form-to-email.php" method="post" name="contact_form">
-            <!-- Hidden Field Honeypot -->
-            <input type="text" name="firstname" class="hide-robot">
             <!-- Name -->
             <label for="name">Name *</label>
             <input type="text" name="name" placeholder="Place name here..." required/>
@@ -157,6 +157,8 @@
             <!-- Text Area -->
             <label for="comments">How can I help? *</label>
             <textarea name="comments" placeholder="Write your comments here..." required></textarea>
+            <!-- Recaptcha -->
+            <div class="g-recaptcha" data-sitekey="6LcI5rAUAAAAAGnKFPYUD5B5OZ-fgwWmtbUyJIDZ"></div>
             <!-- Submit Button -->
             <button class="submit" name="submit" type="submit">SUBMIT</button>
         </form>

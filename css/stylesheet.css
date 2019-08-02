@@ -132,6 +132,10 @@ textarea:focus {
 	outline: none;
 }
 
+.g-recaptcha {
+    margin: 1em 0 .5em;
+}
+
 /* CONTAINER SIZES
    ----------------------------- */
 
